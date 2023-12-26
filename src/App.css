@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.Tiffany-Blue{
+  color: #0bbba0;
+}
+
+.bg-Chinese-Black {
+  background-color: #100e17;
+}
+/*********************** navbar ***********************/  
+
+.navbar {
+  background-color: transparent;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #100e17;
+  box-shadow: 0 2px 4px rgba(35, 35, 35, 0.1); /* Add desired box-shadow */
+}
+
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar-collapse {
+    animation: slideDown 0.5s ease-in-out;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #0bbba0;
+  scale: 1.15;
+}
+
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/*********************** home page ***********************/
+
+#home {
+  background-image: url('/public/Images/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.home-info {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first {
+ display: flex;
+ flex-direction: column;
+}
+
+.first h6 {
+  font-size: 1.2rem;
+  background-color: #0bbba0;
+  width: 140px;
+  border-radius: 100px 100px 100px 0;
+  padding: .5rem 1rem .2rem;
+  letter-spacing: 2px;
+}
+
+.first h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+.first h4 {
+  letter-spacing: 2px;
+}
+
+.second img {
+  border: 30px solid rgb(23, 23, 23);
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  filter: grayscale(0.9);
+}
+
+.second img:hover {
+  filter: grayscale(0); 
+  scale: 1.2;
+
+}
+
+
+/*********************** About page ***********************/
+
+#about {
+  background-color: #100e17;
+}
+
+.about-container {
+  margin: 2rem 0 5rem;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-first {
+  width: 550px;
+}
+
+.about-first img {
+  width: 100%;
+}
+
+.about-second {
+  width: 450px;
+}
+
+.all-skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.all-skills p {
+  border: 1px solid #0bbba0;
+  border-radius: 4px;
+  padding: .2rem;
+  margin: .5rem .5rem;
+}
+
+.dwn {
+  background-color: #0bbba0;
+}
+
+.edu-exp {
+  background-image: url('/public/Images/bg-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.education div{
+  width: 350px;
+  border: 1px solid #100e17;
+  background-color: #100e17;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.experience div {
+  width: 350px;
+  border: 1px solid #100e17;
+  background-color: #100e17;
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.skills-bars {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+.tech {
+  width: 350px;
+}
+
+.progress-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(13px);
+}
+
+.prof {
+  width: 350px;
+  display: flex ;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prof div {
+  margin-bottom: 1rem;
+}
+
+.progress-bar-skill-1 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, #100e17 79%, transparent 80% 100%),
+    conic-gradient(rgb(221, 85, 114) 60%, #3b0117 0);    
+}
+
+.progress-bar-skill-2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, #100e17 79%, transparent 80% 100%),
+    conic-gradient(rgb(85, 110, 221) 80%, #3b0117 0);    
+}
+.progress-bar-skill-3 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, #100e17 79%, transparent 80% 100%),
+    conic-gradient(rgb(85, 221, 137) 70%, #3b0117 0);    
+}
+.progress-bar-skill-4 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: 
+    radial-gradient(closest-side, #100e17 79%, transparent 80% 100%),
+    conic-gradient(rgb(219, 221, 85) 75%, #3b0117 0);    
+}
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*********************** work page ***********************/
+
+.work-first {
+  background-image: url('/public/Images/bg-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+}
+
+
+.work-des-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.work-des-container div {
+  width: 350px;
+  background-color: #100e17;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+
+.carousel-item {
+  height: 25rem;
+  background-color: #100e17;
+  position: relative;
+}
+
+.slider-project {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  bottom: 2rem;
+}
+
+.slider-project img{
+  width: 23%;
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+
+.slider-info {
+  width: 20rem;
+  margin: auto 1rem;
+}
+
+
+/*********************** blog page ***********************/
+#blogs {
+  background-image: url('/public/Images/bg-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blogs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+
+}
+
+.blog-box {
+  background-color: #100e17;
+  width: 300px;
+  padding: .5rem 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.blog-box img {
+  width: 270px;border-radius: 10px;
+}
+/*********************** contact page ***********************/
+
+#contact {
+  background-image: url('/public/Images/dotted-world-map-black-background-vector-illustration_541075-470.jpg');
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.contact-container{
+  background-color: #100e17;
+  width: 28rem;
+  border-radius: 5px;
+  padding: 1.5rem 2rem;
+  margin: 1rem;
+
+}
+.contact-icon {
+  border: 1px solid #0bbba0;
+  border-radius: 50%;
+  padding: 1.8rem;
+}
+
+.messege {
+  margin-top: 1rem;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+
+
+.input-style {
+  padding: .3rem;
+  width: 28rem;
+  border-radius: 5px;
+  margin: .5rem 0;
+}
+
+input[type="text"]
+{
+    background: transparent;
+}
+
+textarea[typeof="text"]
+{
+  background: transparent;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+
+
+
